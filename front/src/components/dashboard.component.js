@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Navigate } from 'react-router-dom';
 
 export default class Dashboard extends Component {
@@ -23,14 +23,14 @@ export default class Dashboard extends Component {
     }
     return (
         <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="bg-light navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/dashboard">React.js and Larevel App</a>
+          <a className="navbar-brand" href="/dashboard">React.js and Larevel App aaa</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="mb-2 mb-lg-0 navbar-nav me-auto">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/dashboard">Home</a>
               </li>
@@ -42,7 +42,7 @@ export default class Dashboard extends Component {
         </div>
       </nav>
 
-      <h1 className="text-black mt-5">welcome to your profile <span className="text-primary">{this.state.user.first_name} </span></h1>
+      <h1 className="mt-5 text-black">welcome to your profile <span className="text-primary">{this.state.user.first_name} </span></h1>
       </div>
     )
   }
